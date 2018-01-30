@@ -9,11 +9,14 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    private let reuseIdentifier = "HeroCell"
+    let reuseIdentifier = "HeroCell"
     var heroes : Heroes?
+    
+    @IBOutlet weak var heroesCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         let downloadHeroesInteractor: DownloadAllHeroesInteractorProtocol = DownladAllHeroesInteractorFakeImplementation()
         
@@ -22,7 +25,10 @@ class MainViewController: UIViewController {
             print(heroes.get(index: 0).name)
             print(heroes.count())
             self.heroes = heroes
-            
+
+            self.heroesCollectionView.delegate = self
+            self.heroesCollectionView.dataSource = self
+
         }) { (error) in
             // TODO: Enviar notificacion al usuario con una alerta
             print(error)

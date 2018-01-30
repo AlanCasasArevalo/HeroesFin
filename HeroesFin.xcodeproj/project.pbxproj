@@ -18,6 +18,8 @@
 		518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */; };
 		518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */; };
 		518EDFC62020FEC9004204E1 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC52020FEC9004204E1 /* HeroTests.swift */; };
+		518EDFC82020FF88004204E1 /* MainViewController+UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */; };
+		518EDFCA2020FFFB004204E1 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC92020FFFB004204E1 /* HeroCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllHeroesInteractorProtocol.swift; sourceTree = "<group>"; };
 		518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownladAllHeroesInteractorFakeImplementation.swift; sourceTree = "<group>"; };
 		518EDFC52020FEC9004204E1 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
+		518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewController.swift"; sourceTree = "<group>"; };
+		518EDFC92020FFFB004204E1 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				518EDF9C2020FB00004204E1 /* MainViewController.swift */,
 				518EDF9E2020FB00004204E1 /* Main.storyboard */,
+				518EDFC92020FFFB004204E1 /* HeroCell.swift */,
+				518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 			files = (
 				518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */,
 				518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */,
+				518EDFCA2020FFFB004204E1 /* HeroCell.swift in Sources */,
 				518EDFBD2020FBA9004204E1 /* Heroes.swift in Sources */,
 				518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */,
+				518EDFC82020FF88004204E1 /* MainViewController+UICollectionViewController.swift in Sources */,
 				518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */,
 				518EDFBB2020FB97004204E1 /* Hero.swift in Sources */,
 			);
