@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06542CE0D0DAFD17CC5A3EA3 /* Pods_HeroesFin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF535241EA8CB441A80D47BB /* Pods_HeroesFin.framework */; };
 		518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9A2020FB00004204E1 /* AppDelegate.swift */; };
 		518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9C2020FB00004204E1 /* MainViewController.swift */; };
 		518EDFA02020FB00004204E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EDF9E2020FB00004204E1 /* Main.storyboard */; };
@@ -50,6 +51,9 @@
 		518EDFC52020FEC9004204E1 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewController.swift"; sourceTree = "<group>"; };
 		518EDFC92020FFFB004204E1 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		667685A97B3C2A14E85F9C2F /* Pods-HeroesFin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesFin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin.debug.xcconfig"; sourceTree = "<group>"; };
+		C293444ED02E737F29CE0DAE /* Pods-HeroesFin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesFin.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin.release.xcconfig"; sourceTree = "<group>"; };
+		DF535241EA8CB441A80D47BB /* Pods_HeroesFin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroesFin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06542CE0D0DAFD17CC5A3EA3 /* Pods_HeroesFin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA9F4A61E76CECB5563DBFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF535241EA8CB441A80D47BB /* Pods_HeroesFin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		518EDF8E2020FB00004204E1 = {
 			isa = PBXGroup;
 			children = (
 				518EDF992020FB00004204E1 /* HeroesFin */,
 				518EDFAE2020FB01004204E1 /* HeroesFinTests */,
 				518EDF982020FB00004204E1 /* Products */,
+				DAF9A8EC5464C48B72872A85 /* Pods */,
+				2FA9F4A61E76CECB5563DBFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +156,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		DAF9A8EC5464C48B72872A85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				667685A97B3C2A14E85F9C2F /* Pods-HeroesFin.debug.xcconfig */,
+				C293444ED02E737F29CE0DAE /* Pods-HeroesFin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518EDFB42020FB01004204E1 /* Build configuration list for PBXNativeTarget "HeroesFin" */;
 			buildPhases = (
+				25B122553A79633C0732CC1D /* [CP] Check Pods Manifest.lock */,
 				518EDF932020FB00004204E1 /* Sources */,
 				518EDF942020FB00004204E1 /* Frameworks */,
 				518EDF952020FB00004204E1 /* Resources */,
+				1E2F9B9C18B1D95A70ADFF88 /* [CP] Embed Pods Frameworks */,
+				3E13A03631F415A19CF3A805 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +265,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E2F9B9C18B1D95A70ADFF88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSLoadingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25B122553A79633C0732CC1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeroesFin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E13A03631F415A19CF3A805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		518EDF932020FB00004204E1 /* Sources */ = {
@@ -403,6 +486,7 @@
 		};
 		518EDFB52020FB01004204E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667685A97B3C2A14E85F9C2F /* Pods-HeroesFin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +502,7 @@
 		};
 		518EDFB62020FB01004204E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C293444ED02E737F29CE0DAE /* Pods-HeroesFin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
