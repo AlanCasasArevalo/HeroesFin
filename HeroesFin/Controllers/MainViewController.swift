@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let downloadHeroesInteractor: DownloadAllHeroesInteractorProtocol = DownLoadAllHeroesInteractorRealImplementation()
         
         downloadHeroesInteractor.executeDownload(onSuccess: { (heroes) in
@@ -41,9 +40,6 @@ class MainViewController: UIViewController {
     }
     
 }
-
-
-
 
 
 

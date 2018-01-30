@@ -32,3 +32,37 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
+extension MainViewController{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "heroShowDetail"{
+            let vc = segue.destination as! HeroDetailController
+            let indexPath = heroesCollectionView.indexPathsForSelectedItems![0]
+            let heroToShow = heroes?.get(index: indexPath.row)
+            vc.hero = heroToShow
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
