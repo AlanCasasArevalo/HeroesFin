@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9A2020FB00004204E1 /* AppDelegate.swift */; };
-		518EDF9D2020FB00004204E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9C2020FB00004204E1 /* ViewController.swift */; };
+		518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9C2020FB00004204E1 /* MainViewController.swift */; };
 		518EDFA02020FB00004204E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EDF9E2020FB00004204E1 /* Main.storyboard */; };
 		518EDFA22020FB00004204E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518EDFA12020FB00004204E1 /* Assets.xcassets */; };
 		518EDFA52020FB00004204E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EDFA32020FB00004204E1 /* LaunchScreen.storyboard */; };
-		518EDFB02020FB01004204E1 /* HeroesFinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFAF2020FB01004204E1 /* HeroesFinTests.swift */; };
+		518EDFB02020FB01004204E1 /* HeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFAF2020FB01004204E1 /* HeroesTests.swift */; };
+		518EDFBB2020FB97004204E1 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFBA2020FB97004204E1 /* Hero.swift */; };
+		518EDFBD2020FBA9004204E1 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFBC2020FBA9004204E1 /* Heroes.swift */; };
+		518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */; };
+		518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */; };
+		518EDFC62020FEC9004204E1 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC52020FEC9004204E1 /* HeroTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +33,19 @@
 /* Begin PBXFileReference section */
 		518EDF972020FB00004204E1 /* HeroesFin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesFin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518EDF9A2020FB00004204E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		518EDF9C2020FB00004204E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		518EDF9C2020FB00004204E1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		518EDF9F2020FB00004204E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		518EDFA12020FB00004204E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518EDFA42020FB00004204E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518EDFA62020FB00004204E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518EDFAB2020FB01004204E1 /* HeroesFinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroesFinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		518EDFAF2020FB01004204E1 /* HeroesFinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesFinTests.swift; sourceTree = "<group>"; };
+		518EDFAF2020FB01004204E1 /* HeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTests.swift; sourceTree = "<group>"; };
 		518EDFB12020FB01004204E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518EDFBA2020FB97004204E1 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		518EDFBC2020FBA9004204E1 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllHeroesInteractorProtocol.swift; sourceTree = "<group>"; };
+		518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownladAllHeroesInteractorFakeImplementation.swift; sourceTree = "<group>"; };
+		518EDFC52020FEC9004204E1 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				518EDF9A2020FB00004204E1 /* AppDelegate.swift */,
-				518EDF9C2020FB00004204E1 /* ViewController.swift */,
-				518EDF9E2020FB00004204E1 /* Main.storyboard */,
+				518EDFC42020FCD8004204E1 /* Controllers */,
 				518EDFA12020FB00004204E1 /* Assets.xcassets */,
 				518EDFA32020FB00004204E1 /* LaunchScreen.storyboard */,
 				518EDFA62020FB00004204E1 /* Info.plist */,
+				518EDFBE2020FBF1004204E1 /* Model */,
 			);
 			path = HeroesFin;
 			sourceTree = "<group>";
@@ -90,10 +100,39 @@
 		518EDFAE2020FB01004204E1 /* HeroesFinTests */ = {
 			isa = PBXGroup;
 			children = (
-				518EDFAF2020FB01004204E1 /* HeroesFinTests.swift */,
+				518EDFAF2020FB01004204E1 /* HeroesTests.swift */,
 				518EDFB12020FB01004204E1 /* Info.plist */,
+				518EDFC52020FEC9004204E1 /* HeroTests.swift */,
 			);
 			path = HeroesFinTests;
+			sourceTree = "<group>";
+		};
+		518EDFBE2020FBF1004204E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				518EDFBA2020FB97004204E1 /* Hero.swift */,
+				518EDFBC2020FBA9004204E1 /* Heroes.swift */,
+				518EDFC32020FC44004204E1 /* Interactor */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		518EDFC32020FC44004204E1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */,
+				518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		518EDFC42020FCD8004204E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				518EDF9C2020FB00004204E1 /* MainViewController.swift */,
+				518EDF9E2020FB00004204E1 /* Main.storyboard */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518EDF9D2020FB00004204E1 /* ViewController.swift in Sources */,
+				518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */,
+				518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */,
+				518EDFBD2020FBA9004204E1 /* Heroes.swift in Sources */,
 				518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */,
+				518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */,
+				518EDFBB2020FB97004204E1 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518EDFB02020FB01004204E1 /* HeroesFinTests.swift in Sources */,
+				518EDFB02020FB01004204E1 /* HeroesTests.swift in Sources */,
+				518EDFC62020FEC9004204E1 /* HeroTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
