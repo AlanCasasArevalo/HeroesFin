@@ -22,6 +22,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let cell : HeroCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HeroCell
         
+        cell.heroPhotoUIImageView.layer.cornerRadius = 5
+        cell.heroPhotoUIImageView.clipsToBounds = true
+        
+        
         cell.refreshHero(hero: heroToCell!)
         
         return cell
