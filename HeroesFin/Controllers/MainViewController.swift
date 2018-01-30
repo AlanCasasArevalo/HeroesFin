@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let downloadHeroesInteractor: DownloadAllHeroesInteractorProtocol = DownladAllHeroesInteractorFakeImplementation()
+        let downloadHeroesInteractor: DownloadAllHeroesInteractorProtocol = DownLoadAllHeroesInteractorRealImplementation()
         
         downloadHeroesInteractor.executeDownload(onSuccess: { (heroes) in
             // TODO: Hacer implementacion

@@ -17,7 +17,7 @@ final class DownladAllHeroesInteractorFakeImplementation : DownloadAllHeroesInte
         let heroes = Heroes()
         
         for i in 0...10 {
-            let hero = Hero(name: "Hero \(i)", photo: "Hero \(i)", realName: "Hero \(i)", height: Double(i), power: "Hero \(i)", abilities: "Hero\(i)", groups: ["Avengers"])
+            let hero = Hero(name: "Hero \(i)", photo: "Hero \(i)", realName: "Hero \(i)", height: "Hero \(i)", power: "Hero \(i)", abilities: "Hero\(i)", groups: ["Avengers"])
             heroes.add(hero: hero)
         }
         

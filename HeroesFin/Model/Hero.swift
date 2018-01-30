@@ -13,7 +13,7 @@ final class Hero {
     let name:String
     let photo: String
     let realName: String
-    let height: Double
+    let height: String
     let power: String
     let abilities: String
     let groups: [String]
@@ -21,7 +21,7 @@ final class Hero {
     init(name:String,
          photo: String,
          realName: String,
-         height: Double,
+         height: String,
          power: String,
          abilities: String,
          groups: [String]) {

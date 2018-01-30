@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		06542CE0D0DAFD17CC5A3EA3 /* Pods_HeroesFin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF535241EA8CB441A80D47BB /* Pods_HeroesFin.framework */; };
+		518461E1202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518461E0202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift */; };
+		518461E520210C35005CB9F8 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518461E420210C35005CB9F8 /* JSONParser.swift */; };
 		518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9A2020FB00004204E1 /* AppDelegate.swift */; };
 		518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDF9C2020FB00004204E1 /* MainViewController.swift */; };
 		518EDFA02020FB00004204E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518EDF9E2020FB00004204E1 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		518461E0202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadAllHeroesInteractorRealImplementation.swift; sourceTree = "<group>"; };
+		518461E420210C35005CB9F8 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		518EDF972020FB00004204E1 /* HeroesFin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesFin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518EDF9A2020FB00004204E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518EDF9C2020FB00004204E1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			children = (
 				518EDFBA2020FB97004204E1 /* Hero.swift */,
 				518EDFBC2020FBA9004204E1 /* Heroes.swift */,
+				518461E420210C35005CB9F8 /* JSONParser.swift */,
 				518EDFC32020FC44004204E1 /* Interactor */,
 			);
 			path = Model;
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				518EDFC12020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift */,
+				518461E0202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift */,
 				518EDFBF2020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift */,
 			);
 			path = Interactor;
@@ -328,10 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */,
+				518461E1202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift in Sources */,
 				518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */,
 				518EDFCA2020FFFB004204E1 /* HeroCell.swift in Sources */,
 				518EDFBD2020FBA9004204E1 /* Heroes.swift in Sources */,
 				518EDF9B2020FB00004204E1 /* AppDelegate.swift in Sources */,
+				518461E520210C35005CB9F8 /* JSONParser.swift in Sources */,
 				518EDFC82020FF88004204E1 /* MainViewController+UICollectionViewController.swift in Sources */,
 				518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */,
 				518EDFBB2020FB97004204E1 /* Hero.swift in Sources */,

@@ -20,6 +20,7 @@ class HeroCell: UICollectionViewCell {
     func refreshHero(hero: Hero){
         self.hero = hero
         self.heroNameTextLabel.text = hero.name
+        self.heroRealNameTextLabel.text = hero.realName
     }
 
 }
