@@ -24,6 +24,9 @@
 		518EDFC62020FEC9004204E1 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC52020FEC9004204E1 /* HeroTests.swift */; };
 		518EDFC82020FF88004204E1 /* MainViewController+UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */; };
 		518EDFCA2020FFFB004204E1 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EDFC92020FFFB004204E1 /* HeroCell.swift */; };
+		51D1E2D62022256B002F042C /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1E2D52022256B002F042C /* String+Image.swift */; };
+		51D1E2D82022279A002F042C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1E2D72022279A002F042C /* Reachability.swift */; };
+		51D1E2DA202227DA002F042C /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1E2D9202227DA002F042C /* ViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		518EDFC52020FEC9004204E1 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewController.swift"; sourceTree = "<group>"; };
 		518EDFC92020FFFB004204E1 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		51D1E2D52022256B002F042C /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		51D1E2D72022279A002F042C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		51D1E2D9202227DA002F042C /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		667685A97B3C2A14E85F9C2F /* Pods-HeroesFin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesFin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin.debug.xcconfig"; sourceTree = "<group>"; };
 		C293444ED02E737F29CE0DAE /* Pods-HeroesFin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesFin.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroesFin/Pods-HeroesFin.release.xcconfig"; sourceTree = "<group>"; };
 		DF535241EA8CB441A80D47BB /* Pods_HeroesFin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroesFin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				518EDF9A2020FB00004204E1 /* AppDelegate.swift */,
+				51D1E2D420222558002F042C /* Utils */,
 				518EDFC42020FCD8004204E1 /* Controllers */,
 				518EDFA12020FB00004204E1 /* Assets.xcassets */,
 				518EDFA32020FB00004204E1 /* LaunchScreen.storyboard */,
@@ -163,6 +170,16 @@
 				518EDFC72020FF88004204E1 /* MainViewController+UICollectionViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51D1E2D420222558002F042C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				51D1E2D52022256B002F042C /* String+Image.swift */,
+				51D1E2D72022279A002F042C /* Reachability.swift */,
+				51D1E2D9202227DA002F042C /* ViewController+Alert.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DAF9A8EC5464C48B72872A85 /* Pods */ = {
@@ -338,6 +355,7 @@
 			files = (
 				518EDF9D2020FB00004204E1 /* MainViewController.swift in Sources */,
 				518461E1202109E1005CB9F8 /* DownLoadAllHeroesInteractorRealImplementation.swift in Sources */,
+				51D1E2D62022256B002F042C /* String+Image.swift in Sources */,
 				518461E920211258005CB9F8 /* HeroDetailController.swift in Sources */,
 				518EDFC22020FC25004204E1 /* DownladAllHeroesInteractorFakeImplementation.swift in Sources */,
 				518EDFCA2020FFFB004204E1 /* HeroCell.swift in Sources */,
@@ -346,7 +364,9 @@
 				518461E520210C35005CB9F8 /* JSONParser.swift in Sources */,
 				518EDFC82020FF88004204E1 /* MainViewController+UICollectionViewController.swift in Sources */,
 				518EDFC02020FC0B004204E1 /* DownloadAllHeroesInteractorProtocol.swift in Sources */,
+				51D1E2DA202227DA002F042C /* ViewController+Alert.swift in Sources */,
 				518EDFBB2020FB97004204E1 /* Hero.swift in Sources */,
+				51D1E2D82022279A002F042C /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

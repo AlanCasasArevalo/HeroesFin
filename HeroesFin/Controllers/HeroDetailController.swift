@@ -15,21 +15,23 @@ class HeroDetailController: UIViewController {
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroNameTextLabel: UILabel!
     @IBOutlet weak var heroHeightTextLabel: UILabel!
-    @IBOutlet weak var heroPowerTextLabel: UILabel!
     @IBOutlet weak var heroAbilitiesTextLabel: UILabel!
+    @IBOutlet weak var heroPowerTextLabel: UILabel!
     @IBOutlet weak var heroGroupsTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = hero?.realName
-        
         heroNameTextLabel.text = hero?.name
         heroHeightTextLabel.text = hero?.height
         heroPowerTextLabel.text = hero?.power
         heroAbilitiesTextLabel.text = hero?.abilities
-//        heroGroupsTextLabel.text = hero?.groups
+        heroGroupsTextLabel.text = hero?.groups
         
+        heroImageView.layer.cornerRadius = 5
+        heroImageView.clipsToBounds = true
+        hero?.photo.loadImage(imageView: heroImageView)
     }
 
     override func didReceiveMemoryWarning() {

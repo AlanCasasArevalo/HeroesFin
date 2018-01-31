@@ -14,7 +14,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return heroes.count()
         }
         return 0
-
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -24,7 +23,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         cell.heroPhotoUIImageView.layer.cornerRadius = 5
         cell.heroPhotoUIImageView.clipsToBounds = true
-        
         
         cell.refreshHero(hero: heroToCell!)
         

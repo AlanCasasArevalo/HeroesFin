@@ -16,7 +16,7 @@ final class Hero {
     let height: String
     let power: String
     let abilities: String
-    let groups: [String]
+    let groups: String
     
     init(name:String,
          photo: String,
@@ -24,7 +24,7 @@ final class Hero {
          height: String,
          power: String,
          abilities: String,
-         groups: [String]) {
+         groups: String) {
         (self.name, self.photo, self.realName, self.height, self.power, self.abilities, self.groups) =
             (name, photo, realName, height, power, abilities, groups)
     }

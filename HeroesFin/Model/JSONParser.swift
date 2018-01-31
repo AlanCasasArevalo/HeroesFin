@@ -23,7 +23,7 @@ func parseHeroes(data: Data) -> Heroes {
                             height: heroJSON["height"] as! String,
                             power: heroJSON["power"] as! String,
                             abilities: heroJSON["abilities"] as! String,
-                            groups: [heroJSON["groups"]] as! [String])
+                            groups: heroJSON["groups"] as! String)
             
             heroes.add(hero: hero)
         }

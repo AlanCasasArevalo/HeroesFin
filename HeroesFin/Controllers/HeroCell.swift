@@ -21,6 +21,7 @@ class HeroCell: UICollectionViewCell {
         self.hero = hero
         self.heroNameTextLabel.text = hero.name
         self.heroRealNameTextLabel.text = hero.realName
+        self.hero?.photo.loadImage(imageView: heroPhotoUIImageView)
     }
 
 }
